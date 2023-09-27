@@ -1,11 +1,5 @@
-# list_loop
-# Complete the empty functions below according to the homework specifications
-# to practice lists and loops
-#
-# Please remember that all solutions must use either a loop, a list, or both!
-#
-# Your name:
-# Date:
+# Your name: James Cole
+# Date: September 25, 2023
 
 # sum_to
 # calculate and print the sum of all numbers less than or equal to a 
@@ -13,10 +7,8 @@
 #def sum_to():
    # print(sum(range(1 + int(input("Give me a number ")))))
 #sum_to()
-# fact
-# use a loop to calculate and print the factorial value of a 
-# user-supplied number
-# e.g. 5! = 5 * 4 * 3 * 2 * 1 = 120
+# factorial calculator
+# Calculates the factorial of a user suplied number
 #def fact():
     #fact = 1
     #n = int(input("Give me a number "))
@@ -29,11 +21,8 @@
 # combination of input and the "split" and "map" functions (which we haven't 
 # learned yet)
 def max():
-    temp_list = int(input("enter at least two numbers, separated by commas",
-        "(no spaces!)"))
-    user_list = temp_list.split(",")
-    user_list = list(map(float, user_list))
-    print(user_list)
+    user_list = map(float(input("enter at least two numbers, separated by commas", "(no spaces!)").split(",")))
+    print("The higher number is: ", max(user_list))
 
 max()
 # mults_till_k
@@ -42,8 +31,13 @@ max()
 #def mults_till_k():
 
 # is_palindrome 
-# use input to take a string from the user, and use a loop and what you
-# know about strings to determine whether the given string is a palindrome
-# (which is a string that reads the same forwards and backwards)
-# e.g. input of "racecar" will print "true", input of "cat" will print "false"
+# Takes string input from user and checks if the word is a palindrome
 #def is_palindrome():
+    #word = input("Give me a word I'll check if it's a palindrome ")
+    #reverse = word[::-1]
+    #if reverse == word:
+        #print("this word is a palindrome")
+    #else: 
+        #print("this word is not a palindrome")
+#is_palindrome()
+            
